@@ -1,0 +1,147 @@
+.header {
+   
+    padding-top: 20px;
+  }
+  body {
+    background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2014/05/img88.jpg);
+    background-attachment: fixed;
+  }
+  .header img {
+    width: 120px;
+    float: left;
+  }
+  .login {
+    width: 100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: white;
+    color: yellowgreen;
+    float: right;
+  }
+  h1 {
+    padding-top: 200px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+  }
+  .description {
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
+    color: yellow;
+    font-size: 20px;
+    background: green;
+  }
+  .menu-container {
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+  }
+  .menu-container p
+  {
+    text-align: center;
+  }
+  .menu {
+    padding-top: 50px;
+    padding-left: 50px;
+    border: 2px solid white;
+    border-radius: 25%;
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    margin-right: 18px;
+    background-color: rgba(0, 0, 0, 0.8);
+   
+  }
+  .menu2 {
+    padding-top: 50px;
+    padding-left: 50px;
+    border: 2px solid white;
+    border-radius: 25%;
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    margin-left: 18px;
+    background-color: rgba(0, 0, 0, 0.8);
+    float: right; 
+  }
+ 
+  .motto {
+    margin-top: 18px;
+    margin-left: 38%;
+    color: white;
+    font-size: 25px;
+    border: 2px solid #3ca55c;
+    border-radius: 30px;
+    background-color: rgba(60, 165, 92, 0.8); 
+    width: 27%;
+    text-align: center;
+  }
+  
+  .input-group {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 30px;
+    background: white;
+    margin: auto;
+    padding: 2px;
+  }
+  .form-control {
+    border: 0 !important;
+    border-radius: 30px 0 0 30px !important;
+    margin: 2px;
+    box-shadow: none !important;
+  }
+  .input-group-text {
+    width: 100px;
+    background-image: linear-gradient(#dc2424, #ffedbc);
+    border: 0 !important;
+    color: white !important;
+    padding: 0 25px !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+  }
+  .social-media
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .social-media ul
+  {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .social-media li
+  {
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  .social-media a {
+    color: white;
+  }
+  .social-media i {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .social-media i:hover {
+    transform: scale(1.2);
+  }
+  footer
+  {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+  }
+  footer p {
+    font-size: 16px;
+    
+  }
