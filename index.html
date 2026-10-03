@@ -1,72 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>The Foodies</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tabasamu Kitchen | Kenyan Food</title>
+
+  <!-- Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  >
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <section class="header">
+  <!-- ================= NAVBAR ================= -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <img src="trial.png" alt="logo">
-      <button type="button" class="login"><strong>Log In</strong></button>
-    </div>
-    <div>
-      <h1> Tabasamu Kitchen</h1>
-      <p class="description">Still in the office?<br>Make an order for your company now.<br> Check Out the Menu first, you will like it!.</p>
-    </div>
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Input Food to Order">
-      <div class="input-group-append">
-        <button type="submit" class="input-group-text btn">Submit</button>
+
+      <a class="navbar-brand" href="#">
+        <img src="trial.png" alt="Tabasamu Kitchen Logo">
+        <span>Tabasamu <strong>Kitchen</strong></span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+        <button class="login-btn">
+          <i class="fa fa-user"></i> Log In
+        </button>
+
       </div>
     </div>
-    <div class="menu-container">
-    <div class="menu">
-      <p><b>FOOD</b></p>
-      <ul>
-        <li>Ugali (Cornmeal Staple)</li>
-        <li>Irio (Mashed Peas and Potato Mix)</li>
-        <li>Githeri (Beans and Corn)</li>
-        <li>Kenyan Pilau (Spiced Rice)</li>
-        <li>Wali wa Nazi (Coconut Rice)</li>
-        <li>Sukuma Wiki (Collard Greens / Kale)</li>
-        <li>Kenyan Stew</li>
-        <li>Nyama Choma (Roasted Meal – Pride of Kenyan Food</li>
-        <li>Matoke (Plantain Banana Stew)</li>
+  </nav>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero" id="home">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-6 hero-text">
+
+          <span class="small-title">
+            <i class="fa fa-cutlery"></i>
+            AUTHENTIC KENYAN CUISINE
+          </span>
+
+          <h1>
+            Delicious food,
+            <span>made with love.</span>
+          </h1>
+
+          <p>
+            Still in the office? No worries. Order your favourite
+            Kenyan meals and enjoy fresh, delicious food without
+            leaving your desk.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#menu" class="primary-btn">
+              View Our Menu
+              <i class="fa fa-arrow-right"></i>
+            </a>
+
+            <a href="#contact" class="secondary-btn">
+              Contact Us
+            </a>
+
+          </div>
+
+          <div class="hero-info">
+
+            <div>
+              <i class="fa fa-clock-o"></i>
+              <span>Fast Delivery</span>
+            </div>
+
+            <div>
+              <i class="fa fa-leaf"></i>
+              <span>Fresh Ingredients</span>
+            </div>
+
+            <div>
+              <i class="fa fa-heart"></i>
+              <span>Made With Love</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+          <div class="hero-image">
+
+            <img
+              src="trial.png"
+              alt="Delicious Kenyan Food"
+            >
+
+            <div class="floating-card">
+
+              <div class="food-icon">
+                <i class="fa fa-star"></i>
+              </div>
+
+              <div>
+                <strong>Customer Favourite</strong>
+                <p>Authentic Kenyan flavours</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-    <div class="menu2">
-        <p><b>DRINKS</b></p>
-  <ul>
-    <li>Coke</li>
-    <li>Sprite</li>
-    <li>Fanta</li>
-    <li>Lemonade</li>
-    <li>Iced tea</li>
-    <li>Orange juice</li>
-    <li>Apple juice</li>
-    <li>Smoothies</li>
-    <li>Milkshakes</li>
-    <li>Coffee</li>
-    <li>Tea</li>
-  </ul>
-      
-      </ul>
-    </div>
-    
-    </div>
-    <p class="motto"><b>You love It, Don't You Ha!!</b></p>
+
   </section>
-  <footer>
-      <div class="social-media">
-      <ul>
-        <li> <a href="#"></a><i class="fa fa-facebook"></i></li>
-        <li> <a href="#"></a><i class="fa fa-instagram"></i></li>
-        <li> <a href="#"></a><i class="fa fa-twitter"></i></li>
-        <li> <a href="#"></a><i class="fa fa-linkedin"></i></li>
-      </ul>
+
+
+  <!-- ================= SEARCH ================= -->
+
+  <section class="search-section">
+
+    <div class="container">
+
+      <div class="search-box">
+
+        <div>
+          <h3>What are you craving?</h3>
+          <p>Search our menu and find your favourite meal.</p>
+        </div>
+
+        <div class="search-input">
+
+          <i class="fa fa-search"></i>
+
+          <input
+            type="text"
+            placeholder="Search for food or drinks..."
+          >
+
+          <button>
+            Search
+          </button>
+
+        </div>
+
+      </div>
+
     </div>
-    <p>&copy; 2023 Salus. All rights Reserved</p>
-    </footer>
+
+  </section>
+
+
+  <!-- ================= MENU ================= -->
+
+  <section class="menu-section" id="menu">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>OUR MENU</span>
+
+        <h2>Something delicious for everyone</h2>
+
+        <p>
+          From traditional Kenyan favourites to refreshing drinks,
+          we've got something to satisfy your appetite.
+        </p>
+
+      </div>
+
+
+      <!-- FOOD -->
+
+      <div class="menu-heading">
+
+        <div class="menu-icon">
+          <i class="fa fa-cutlery"></i>
+        </div>
+
+        <div>
+          <h3>Kenyan Favourites</h3>
+          <p>Traditional meals prepared with authentic flavours.</p>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-circle"></i>
+            </div>
+
+            <div>
+              <h4>Ugali</h4>
+              <p>Traditional Kenyan cornmeal staple.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-leaf"></i>
+            </div>
+
+            <div>
+              <h4>Irio</h4>
+              <p>Mashed peas and potato mix.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-leaf"></i>
+            </div>
+
+            <div>
+              <h4>Githeri</h4>
+              <p>A classic combination of beans and corn.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-spoon"></i>
+            </div>
+
+            <div>
+              <h4>Kenyan Pilau</h4>
+              <p>Spiced rice cooked with aromatic flavours.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-leaf"></i>
+            </div>
+
+            <div>
+              <h4>Wali wa Nazi</h4>
+              <p>Fragrant rice cooked with coconut milk.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-leaf"></i>
+            </div>
+
+            <div>
+              <h4>Sukuma Wiki</h4>
+              <p>Fresh collard greens prepared Kenyan style.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-spoon"></i>
+            </div>
+
+            <div>
+              <h4>Kenyan Stew</h4>
+              <p>Rich and hearty traditional Kenyan stew.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card featured">
+
+            <div class="food-card-icon">
+              <i class="fa fa-fire"></i>
+            </div>
+
+            <div>
+              <h4>Nyama Choma</h4>
+              <p>Roasted meat and a true Kenyan favourite.</p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+          <div class="food-card">
+
+            <div class="food-card-icon">
+              <i class="fa fa-leaf"></i>
+            </div>
+
+            <div>
+              <h4>Matoke</h4>
+              <p>Plantain banana stew cooked with rich spices.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- DRINKS -->
+
+      <div class="menu-heading drinks-heading">
+
+        <div class="menu-icon">
+          <i class="fa fa-glass"></i>
+        </div>
+
+        <div>
+          <h3>Refreshing Drinks</h3>
+          <p>The perfect drink to accompany your meal.</p>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Coke</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Sprite</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Fanta</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Lemonade</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Iced Tea</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Orange Juice</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Apple Juice</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Smoothies</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-glass"></i>
+            <h4>Milkshakes</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-coffee"></i>
+            <h4>Coffee</h4>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="drink-card">
+            <i class="fa fa-coffee"></i>
+            <h4>Tea</h4>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section class="about-section" id="about">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+
+          <span class="small-title">WHY TABASAMU?</span>
+
+          <h2>
+            Good food brings
+            <span>people together.</span>
+          </h2>
+
+          <p>
+            At Tabasamu Kitchen, we believe that food should be
+            delicious, fresh and convenient. Whether you're working
+            late at the office or enjoying lunch with your team,
+            we're here to make your meal easier.
+          </p>
+
+          <p>
+            Our menu celebrates the rich flavours of Kenyan cuisine
+            while offering refreshing drinks and familiar favourites.
+          </p>
+
+          <a href="#menu" class="primary-btn">
+            Explore Menu
+            <i class="fa fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+          <div class="about-box">
+
+            <div class="about-item">
+              <i class="fa fa-leaf"></i>
+              <h4>Fresh</h4>
+              <p>Quality ingredients in every meal.</p>
+            </div>
+
+            <div class="about-item">
+              <i class="fa fa-clock-o"></i>
+              <h4>Convenient</h4>
+              <p>Food delivered when you need it.</p>
+            </div>
+
+            <div class="about-item">
+              <i class="fa fa-heart"></i>
+              <h4>Made With Love</h4>
+              <p>Meals prepared with care.</p>
+            </div>
+
+            <div class="about-item">
+              <i class="fa fa-smile-o"></i>
+              <h4>Happy Customers</h4>
+              <p>Great food, great experiences.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CTA ================= -->
+
+  <section class="cta-section">
+
+    <div class="container">
+
+      <div class="cta-content">
+
+        <span>READY TO EAT?</span>
+
+        <h2>
+          Your next delicious meal
+          is just a click away.
+        </h2>
+
+        <a href="#menu" class="cta-button">
+          Order From Our Menu
+          <i class="fa fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer id="contact">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="footer-brand">
+
+            <img src="trial.png" alt="Tabasamu Kitchen Logo">
+
+            <h3>Tabasamu Kitchen</h3>
+
+          </div>
+
+          <p>
+            Delicious Kenyan food made with love.
+            Bringing good food closer to you.
+          </p>
+
+        </div>
+
+
+        <div class="col-md-6 footer-right">
+
+          <h4>Follow Us</h4>
+
+          <div class="social-media">
+
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr>
+
+      <p class="copyright">
+        &copy; 2026 Tabasamu Kitchen. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </body>
+</html>
